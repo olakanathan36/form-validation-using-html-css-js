@@ -1,0 +1,36 @@
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+table{
+    border: 2px solid;
+    padding: 40px;
+    background-color: antiquewhite;
+    margin-top: 100px;
+}
+label{
+    font-size: xx-large;
+}
+input{
+    height: 30px;
+}
+input,textarea{
+    width: 300px;
+
+}
+.submit{
+    width: 100px;
+    height: 30px;
+    background-color:skyblue;
+    border-color: black;
+}
+tr td{
+    padding: 20px;
+}

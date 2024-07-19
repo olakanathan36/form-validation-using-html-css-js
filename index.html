@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form">
+        <form action="#" method="post" name="validateform" onsubmit="return validationform()">
+            <div class="form-group">
+                <table class="table-form">
+                    <tr>
+                        <td><label for="Firstname">Firstname</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="name" id="name" class="form" placeholder="Firstname" required ></td>
+
+                    </tr>   <br><br>
+                    <tr>
+                        <td><label for="Lastname">Lastname</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="lastname" id="lastname" class="form" placeholder="lastname" required></td>
+                    </tr><br><br>
+                    <tr>
+                        <td><label for="city">city</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="city" id="city" class="form" placeholder="city" required></td>
+                    </tr><br><br>
+                    <tr>
+                        <td><label for="phonenumber">phonenumber</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="phonenumber" id="phonenumber" class="phonenumber" placeholder="phonenumber" required></td>
+                    </tr><br><br>
+                    <tr>
+                        <td><label for="address">address</label></td>
+                        <td>:</td>
+                        <td><textarea name="address" id="address" cols="20" rows="5" required></textarea>
+                            
+                    </tr>
+                    <!-- submit button  -->
+                     <tr >
+                       <td colspan="">
+
+                       </td>
+                       <td></td>
+                       <td>
+                        <input type="submit" name="submit" value="submit" class="submit" required>
+
+                       </td>
+
+
+                       
+                    </tr>
+
+
+               
+                </table>
+            </div>
+            <section>
+
+            </section>
+   
+
+
+        </form>
+    </div>
+
+    <script>
+        function validationform() {
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("lastname").value;
+            var city=document.getElementById("city").value;
+            var phonenumber=document.getElementById("phonenumber").value;
+            var address=document.getElementById("address").value;
+            if (username == "" || password == "" || phonenumber.length!=10 || city=="" || address=="") {
+                alert("Please fill all the fields");
+                return false;
+                }
+            else{
+                alert("form filled successfully");
+                return true;
+
+            }    
+
+            }
+          
+        
+    </script>
+</body>
+
+</html>
